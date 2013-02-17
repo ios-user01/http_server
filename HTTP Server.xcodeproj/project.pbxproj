@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5335474116D11F6C004B0296 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335474016D11F6C004B0296 /* Cocoa.framework */; };
 		5335474B16D11F6C004B0296 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5335474916D11F6C004B0296 /* InfoPlist.strings */; };
 		5335474D16D11F6C004B0296 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5335474C16D11F6C004B0296 /* main.m */; };
-		5335475116D11F6C004B0296 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5335474F16D11F6C004B0296 /* Credits.rtf */; };
-		5335475416D11F6C004B0296 /* KDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5335475316D11F6C004B0296 /* KDAppDelegate.m */; };
-		5335475716D11F6C004B0296 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5335475516D11F6C004B0296 /* MainMenu.xib */; };
 		5335475F16D11F6C004B0296 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335475E16D11F6C004B0296 /* SenTestingKit.framework */; };
-		5335476016D11F6C004B0296 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335474016D11F6C004B0296 /* Cocoa.framework */; };
 		5335476816D11F6C004B0296 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5335476616D11F6C004B0296 /* InfoPlist.strings */; };
 		5335476B16D11F6C004B0296 /* HTTP_ServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5335476A16D11F6C004B0296 /* HTTP_ServerTests.m */; };
+		5335478516D12211004B0296 /* CoreNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335477C16D12005004B0296 /* CoreNetworking.framework */; };
+		5335478716D12221004B0296 /* CoreNetworking.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5335477C16D12005004B0296 /* CoreNetworking.framework */; };
+		5335478916D1230F004B0296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335474516D11F6C004B0296 /* Foundation.framework */; };
+		5335478B16D12323004B0296 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335478A16D12323004B0296 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,28 +26,66 @@
 			remoteGlobalIDString = 5335473C16D11F6C004B0296;
 			remoteInfo = "HTTP Server";
 		};
+		5335477B16D12005004B0296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5335477516D12005004B0296 /* CoreNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5370E0710F5B0571008F5991;
+			remoteInfo = CoreNetworking;
+		};
+		5335477D16D12005004B0296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5335477516D12005004B0296 /* CoreNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53D4568116209630006FAD65;
+			remoteInfo = "CoreNetworking Tests";
+		};
+		5335477F16D12005004B0296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5335477516D12005004B0296 /* CoreNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53BEF6A10F5B6A2700063B8D;
+			remoteInfo = "CoreNetworking Touch";
+		};
+		5335478316D1220E004B0296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5335477516D12005004B0296 /* CoreNetworking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5370E0700F5B0571008F5991;
+			remoteInfo = CoreNetworking;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5335478616D12216004B0296 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5335478716D12221004B0296 /* CoreNetworking.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5335473D16D11F6C004B0296 /* HTTP Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTTP Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5335474016D11F6C004B0296 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		5335474316D11F6C004B0296 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		5335474416D11F6C004B0296 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5335474516D11F6C004B0296 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5335474816D11F6C004B0296 /* HTTP Server-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTTP Server-Info.plist"; sourceTree = "<group>"; };
 		5335474A16D11F6C004B0296 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5335474C16D11F6C004B0296 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5335474E16D11F6C004B0296 /* HTTP Server-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HTTP Server-Prefix.pch"; sourceTree = "<group>"; };
-		5335475016D11F6C004B0296 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		5335475216D11F6C004B0296 /* KDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDAppDelegate.h; sourceTree = "<group>"; };
-		5335475316D11F6C004B0296 /* KDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDAppDelegate.m; sourceTree = "<group>"; };
-		5335475616D11F6C004B0296 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5335475D16D11F6C004B0296 /* HTTP ServerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HTTP ServerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5335475E16D11F6C004B0296 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5335476516D11F6C004B0296 /* HTTP ServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTTP ServerTests-Info.plist"; sourceTree = "<group>"; };
 		5335476716D11F6C004B0296 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5335476916D11F6C004B0296 /* HTTP_ServerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTP_ServerTests.h; sourceTree = "<group>"; };
 		5335476A16D11F6C004B0296 /* HTTP_ServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTP_ServerTests.m; sourceTree = "<group>"; };
+		5335477516D12005004B0296 /* CoreNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetworking.xcodeproj; path = Externals/CoreNetworking/CoreNetworking.xcodeproj; sourceTree = "<group>"; };
+		5335478816D12244004B0296 /* HTTP Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HTTP Server.entitlements"; sourceTree = "<group>"; };
+		5335478A16D12323004B0296 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5335474116D11F6C004B0296 /* Cocoa.framework in Frameworks */,
+				5335478B16D12323004B0296 /* CoreServices.framework in Frameworks */,
+				5335478916D1230F004B0296 /* Foundation.framework in Frameworks */,
+				5335478516D12211004B0296 /* CoreNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +104,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5335475F16D11F6C004B0296 /* SenTestingKit.framework in Frameworks */,
-				5335476016D11F6C004B0296 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				5335474616D11F6C004B0296 /* HTTP Server */,
-				5335476316D11F6C004B0296 /* HTTP ServerTests */,
+				5335476316D11F6C004B0296 /* HTTP Server Tests */,
 				5335473F16D11F6C004B0296 /* Frameworks */,
+				5335477416D11FF8004B0296 /* Externals */,
 				5335473E16D11F6C004B0296 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,29 +133,17 @@
 		5335473F16D11F6C004B0296 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5335474016D11F6C004B0296 /* Cocoa.framework */,
+				5335478A16D12323004B0296 /* CoreServices.framework */,
+				5335474516D11F6C004B0296 /* Foundation.framework */,
 				5335475E16D11F6C004B0296 /* SenTestingKit.framework */,
-				5335474216D11F6C004B0296 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5335474216D11F6C004B0296 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5335474316D11F6C004B0296 /* AppKit.framework */,
-				5335474416D11F6C004B0296 /* CoreData.framework */,
-				5335474516D11F6C004B0296 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		5335474616D11F6C004B0296 /* HTTP Server */ = {
 			isa = PBXGroup;
 			children = (
-				5335475216D11F6C004B0296 /* KDAppDelegate.h */,
-				5335475316D11F6C004B0296 /* KDAppDelegate.m */,
-				5335475516D11F6C004B0296 /* MainMenu.xib */,
+				5335474C16D11F6C004B0296 /* main.m */,
 				5335474716D11F6C004B0296 /* Supporting Files */,
 			);
 			path = "HTTP Server";
@@ -127,20 +154,20 @@
 			children = (
 				5335474816D11F6C004B0296 /* HTTP Server-Info.plist */,
 				5335474916D11F6C004B0296 /* InfoPlist.strings */,
-				5335474C16D11F6C004B0296 /* main.m */,
 				5335474E16D11F6C004B0296 /* HTTP Server-Prefix.pch */,
-				5335474F16D11F6C004B0296 /* Credits.rtf */,
+				5335478816D12244004B0296 /* HTTP Server.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5335476316D11F6C004B0296 /* HTTP ServerTests */ = {
+		5335476316D11F6C004B0296 /* HTTP Server Tests */ = {
 			isa = PBXGroup;
 			children = (
 				5335476916D11F6C004B0296 /* HTTP_ServerTests.h */,
 				5335476A16D11F6C004B0296 /* HTTP_ServerTests.m */,
 				5335476416D11F6C004B0296 /* Supporting Files */,
 			);
+			name = "HTTP Server Tests";
 			path = "HTTP ServerTests";
 			sourceTree = "<group>";
 		};
@@ -153,6 +180,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5335477416D11FF8004B0296 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				5335477516D12005004B0296 /* CoreNetworking.xcodeproj */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		5335477616D12005004B0296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5335477C16D12005004B0296 /* CoreNetworking.framework */,
+				5335477E16D12005004B0296 /* CoreNetworking Tests.octest */,
+				5335478016D12005004B0296 /* libCoreNetworking.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,19 +208,21 @@
 				5335473916D11F6C004B0296 /* Sources */,
 				5335473A16D11F6C004B0296 /* Frameworks */,
 				5335473B16D11F6C004B0296 /* Resources */,
+				5335478616D12216004B0296 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5335478416D1220E004B0296 /* PBXTargetDependency */,
 			);
 			name = "HTTP Server";
 			productName = "HTTP Server";
 			productReference = 5335473D16D11F6C004B0296 /* HTTP Server.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5335475C16D11F6C004B0296 /* HTTP ServerTests */ = {
+		5335475C16D11F6C004B0296 /* HTTP Server Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5335477116D11F6C004B0296 /* Build configuration list for PBXNativeTarget "HTTP ServerTests" */;
+			buildConfigurationList = 5335477116D11F6C004B0296 /* Build configuration list for PBXNativeTarget "HTTP Server Tests" */;
 			buildPhases = (
 				5335475816D11F6C004B0296 /* Sources */,
 				5335475916D11F6C004B0296 /* Frameworks */,
@@ -187,7 +234,7 @@
 			dependencies = (
 				5335476216D11F6C004B0296 /* PBXTargetDependency */,
 			);
-			name = "HTTP ServerTests";
+			name = "HTTP Server Tests";
 			productName = "HTTP ServerTests";
 			productReference = 5335475D16D11F6C004B0296 /* HTTP ServerTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -212,13 +259,43 @@
 			mainGroup = 5335473416D11F6C004B0296;
 			productRefGroup = 5335473E16D11F6C004B0296 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5335477616D12005004B0296 /* Products */;
+					ProjectRef = 5335477516D12005004B0296 /* CoreNetworking.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5335473C16D11F6C004B0296 /* HTTP Server */,
-				5335475C16D11F6C004B0296 /* HTTP ServerTests */,
+				5335475C16D11F6C004B0296 /* HTTP Server Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5335477C16D12005004B0296 /* CoreNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreNetworking.framework;
+			remoteRef = 5335477B16D12005004B0296 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5335477E16D12005004B0296 /* CoreNetworking Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CoreNetworking Tests.octest";
+			remoteRef = 5335477D16D12005004B0296 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5335478016D12005004B0296 /* libCoreNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCoreNetworking.a;
+			remoteRef = 5335477F16D12005004B0296 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5335473B16D11F6C004B0296 /* Resources */ = {
@@ -226,8 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5335474B16D11F6C004B0296 /* InfoPlist.strings in Resources */,
-				5335475116D11F6C004B0296 /* Credits.rtf in Resources */,
-				5335475716D11F6C004B0296 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5335474D16D11F6C004B0296 /* main.m in Sources */,
-				5335475416D11F6C004B0296 /* KDAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +357,11 @@
 			target = 5335473C16D11F6C004B0296 /* HTTP Server */;
 			targetProxy = 5335476116D11F6C004B0296 /* PBXContainerItemProxy */;
 		};
+		5335478416D1220E004B0296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreNetworking;
+			targetProxy = 5335478316D1220E004B0296 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -292,22 +371,6 @@
 				5335474A16D11F6C004B0296 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5335474F16D11F6C004B0296 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5335475016D11F6C004B0296 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		5335475516D11F6C004B0296 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5335475616D11F6C004B0296 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		5335476616D11F6C004B0296 /* InfoPlist.strings */ = {
@@ -383,10 +446,13 @@
 		5335476F16D11F6C004B0296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HTTP Server/HTTP Server.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTTP Server/HTTP Server-Prefix.pch";
 				INFOPLIST_FILE = "HTTP Server/HTTP Server-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,10 +461,13 @@
 		5335477016D11F6C004B0296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HTTP Server/HTTP Server.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTTP Server/HTTP Server-Prefix.pch";
 				INFOPLIST_FILE = "HTTP Server/HTTP Server-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,7 +523,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		5335477116D11F6C004B0296 /* Build configuration list for PBXNativeTarget "HTTP ServerTests" */ = {
+		5335477116D11F6C004B0296 /* Build configuration list for PBXNativeTarget "HTTP Server Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5335477216D11F6C004B0296 /* Debug */,

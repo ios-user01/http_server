@@ -1,0 +1,3 @@
+[submodule "Externals/CoreNetworking"]
+	path = Externals/CoreNetworking
+	url = git@github.com:keithduncan/CoreNetworking.git
